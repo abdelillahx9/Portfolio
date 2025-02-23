@@ -1,6 +1,6 @@
-import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import photo from '../assets/photo.jpg'; // Import the image
 
 const HomePage = () => {
   const typedElement = useRef(null);
@@ -67,7 +67,7 @@ const HomePage = () => {
       </div>
       <div className="w-4/5 md:w-1/2 flex justify-center md:order-first">
         <img
-          src="/photo.jpg"
+          src={photo} // Use the imported image
           alt="Abdelillah Chikh"
           className="w-60 h-60 object-cover rounded-full shadow-lg md:w-80 md:h-80 transition-transform duration-500 transform hover:scale-110 border-solid border-4 border-[#007ced]"
         />
